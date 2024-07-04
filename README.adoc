@@ -1,0 +1,18 @@
+= Librería básica con .NET 8.0 y C#
+:sectnums:
+
+== Creación de solución 
+
+[source,bash]
+....
+dotnet new sln
+....
+
+== Creación de librería
+
+StringLibrary corresponde al nombre de la nueva librería que se desea crear.
+
+[source,bash]
+....
+dotnet new classlib -o StringLibrary
+....
