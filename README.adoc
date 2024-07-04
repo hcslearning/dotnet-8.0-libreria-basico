@@ -51,3 +51,22 @@ dotnet add ShowCase/ShowCase.csproj reference StringLibrary/StringLibrary.csproj
 ....
 dotnet run --project ShowCase/ShowCase.csproj
 ....
+
+
+== Crear proyecto con Test Unitarios
+
+Existen 3 framework para pruebas:
+
+. MSTest
+. xUnit
+. nUnit 
+
+[source,bash]
+....
+dotnet new mstest -o StringLibraryTest 
+dotnet sln add StringLibraryTest/StringLibraryTest.csproj
+dotnet add StringLibraryTest/StringLibraryTest.csproj reference StringLibrary/StringLibrary.csproj
+dotnet test StringLibraryTest/StringLibraryTest.csproj
+....
+
+
